@@ -1,0 +1,182 @@
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #c2803b, #945527);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+header {
+    position: relative;
+    /* Adicione esta linha para a logo ser posicionada em relação a este elemento */
+    background-color: rgba(150, 31, 31, 0.5);
+    /* Fundo com cor e opacidade */
+    color: white;
+    padding: 10px;
+    /* Removendo o padding extra */
+    display: flex;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* Cor do texto no cabeçalho, ajuste conforme necessário */
+    text-align: center;
+    /* Ajuste conforme necessário */
+    height: 300px;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #08101a98;
+    /* Defina a altura do cabeçalho conforme necessário */
+    margin: 0 auto;
+    /* Outros estilos podem ser adicionados conforme necessário */
+}
+
+.background-image {
+    border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.logo {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    text-align: left;
+}
+
+.logo img {
+    width: 55%;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.navegacao a {
+    float: right;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: right;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.navegacao a:hover {
+    color: #000000;
+    background-color: rgb(116, 80, 33);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+
+/* Estilo para as seções principais */
+.main-section,
+.oportunidades-section,
+.comunidade-section {
+
+    margin-bottom: 20px;
+}
+
+
+section.module.content {
+    justify-content: center;
+    padding: 40px 0;
+    background: #ece7d5;
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Gradiente sobre as seções de parallax */
+section.module.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    /* Ordem de empilhamento, elementos com z-index maior aparecem acima */
+}
+
+section.module.parallax-2 {
+    background-image: url("/img/pet8.webp");
+}
+
+section.module.parallax-3 {
+    background-image: url("/img/fundo.jpg");
+}
+
+h1 {
+    color: #370000;
+    text-align: center;
+}
+
+/* Estilos para dispositivos com largura máxima de 820px */
+@media all and (max-width: 820px) {
+    section.module h2 {
+        font-size: 32px;
+    }
+
+    .module h2,
+    p {
+        padding: 0 8px;
+    }
+
+
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    section.module.parallax h1 {
+        font-size: 36px;
+    }
+}
+
+.rodape {
+    color: darkgray;
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
+}

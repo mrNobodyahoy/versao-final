@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #c2803b, #945527);
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+header {
+    position: relative;
+    /* Adicione esta linha para a logo ser posicionada em relação a este elemento */
+    background-color: rgba(150, 31, 31, 0.5);
+    /* Fundo com cor e opacidade */
+    color: white;
+    padding: 10px;
+    /* Removendo o padding extra */
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* Cor do texto no cabeçalho, ajuste conforme necessário */
+    text-align: center;
+    /* Ajuste conforme necessário */
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+
+    box-shadow: 10px 10px 10px #08101a98;
+    /* Defina a altura do cabeçalho conforme necessário */
+    /* Outros estilos podem ser adicionados conforme necessário */
+}
+
+.background-image {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.logo {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    text-align: left;
+}
+
+.logo img {
+    width: 55%;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.navegacao a {
+    float: right;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: right;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.navegacao a:hover {
+    color: #000000;
+    background-color: rgb(116, 80, 33);
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+
+/* Estilo para as seções principais */
+.main-section,
+.oportunidades-section,
+.comunidade-section {
+    margin-bottom: 20px;
+}
+
+/* Estilo para o contêiner do item da organização */
+.organizacao-item {
+    background-color: #c2803b;
+    border: 10px solid #652b14;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.organizacao-item img {
+    width: 350px;
+    height: 200px;
+    border-right: 5px solid #652b14;
+    height: auto;
+    margin-right: 10px;
+    object-fit: cover;
+
+}
+
+/* Estilo para o texto ao lado das imagens */
+.organizacao-item .organizacao-info {
+    flex: 1;
+}
+
+h2 {
+    color: #370000;
+    text-align: center;
+}
+
+p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+h1 {
+    color: #370000;
+    text-align: center;
+}
+
+form {
+    border: 2px solid #370000;
+    border-radius: 5px;
+    margin: 17px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 500px;
+    background-color: #c2803b;
+    box-shadow: 6px 6px 20px #2c2828;
+
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+
+}
+
+button {
+
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #370000;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+
+
+@media all and (max-width: 820px) {
+    section.module h2 {
+        font-size: 32px;
+    }
+
+    .module h2,
+    p {
+        padding: 0 8px;
+    }
+
+
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    section.module.parallax h1 {
+        font-size: 36px;
+    }
+}
+
+.rodape {
+    color: darkgray;
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
+}
